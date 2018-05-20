@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MTSData" targetNamespace="http://tempuri.org/MTSData.xsd" xmlns:mstns="http://tempuri.org/MTSData.xsd" xmlns="http://tempuri.org/MTSData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MTSData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="MTSData" msprop:Generator_UserDSName="MTSData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Numbers" msprop:Generator_TableClassName="NumbersDataTable" msprop:Generator_TableVarName="tableNumbers" msprop:Generator_RowChangedName="NumbersRowChanged" msprop:Generator_TablePropName="Numbers" msprop:Generator_RowDeletingName="NumbersRowDeleting" msprop:Generator_RowChangingName="NumbersRowChanging" msprop:Generator_RowEvHandlerName="NumbersRowChangeEventHandler" msprop:Generator_RowDeletedName="NumbersRowDeleted" msprop:Generator_RowClassName="NumbersRow" msprop:Generator_UserTableName="Numbers" msprop:Generator_RowEvArgName="NumbersRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumberId" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnNumberId" msprop:Generator_ColumnPropNameInRow="NumberId" msprop:Generator_ColumnPropNameInTable="NumberIdColumn" msprop:Generator_UserColumnName="NumberId" type="xs:int" />
+              <xs:element name="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnPropNameInTable="NumberColumn" msprop:Generator_UserColumnName="Number" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Records" msprop:Generator_TableClassName="RecordsDataTable" msprop:Generator_TableVarName="tableRecords" msprop:Generator_RowChangedName="RecordsRowChanged" msprop:Generator_TablePropName="Records" msprop:Generator_RowDeletingName="RecordsRowDeleting" msprop:Generator_RowChangingName="RecordsRowChanging" msprop:Generator_RowEvHandlerName="RecordsRowChangeEventHandler" msprop:Generator_RowDeletedName="RecordsRowDeleted" msprop:Generator_RowClassName="RecordsRow" msprop:Generator_UserTableName="Records" msprop:Generator_RowEvArgName="RecordsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RecordId" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnRecordId" msprop:Generator_ColumnPropNameInRow="RecordId" msprop:Generator_ColumnPropNameInTable="RecordIdColumn" msprop:Generator_UserColumnName="RecordId" type="xs:int" />
+              <xs:element name="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnPropNameInTable="NumberColumn" msprop:Generator_UserColumnName="Number" type="xs:string" minOccurs="0" />
+              <xs:element name="CallType" msprop:Generator_ColumnVarNameInTable="columnCallType" msprop:Generator_ColumnPropNameInRow="CallType" msprop:Generator_ColumnPropNameInTable="CallTypeColumn" msprop:Generator_UserColumnName="CallType" type="xs:string" minOccurs="0" />
+              <xs:element name="CallTime" msprop:Generator_ColumnVarNameInTable="columnCallTime" msprop:Generator_ColumnPropNameInRow="CallTime" msprop:Generator_ColumnPropNameInTable="CallTimeColumn" msprop:Generator_UserColumnName="CallTime" type="xs:string" minOccurs="0" />
+              <xs:element name="Duration" msprop:Generator_ColumnVarNameInTable="columnDuration" msprop:Generator_ColumnPropNameInRow="Duration" msprop:Generator_ColumnPropNameInTable="DurationColumn" msprop:Generator_UserColumnName="Duration" type="xs:string" minOccurs="0" />
+              <xs:element name="FileName" msprop:Generator_ColumnVarNameInTable="columnFileName" msprop:Generator_ColumnPropNameInRow="FileName" msprop:Generator_ColumnPropNameInTable="FileNameColumn" msprop:Generator_UserColumnName="FileName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Files" msprop:Generator_TableClassName="FilesDataTable" msprop:Generator_TableVarName="tableFiles" msprop:Generator_TablePropName="Files" msprop:Generator_RowDeletingName="FilesRowDeleting" msprop:Generator_RowChangingName="FilesRowChanging" msprop:Generator_RowEvHandlerName="FilesRowChangeEventHandler" msprop:Generator_RowDeletedName="FilesRowDeleted" msprop:Generator_UserTableName="Files" msprop:Generator_RowChangedName="FilesRowChanged" msprop:Generator_RowEvArgName="FilesRowChangeEvent" msprop:Generator_RowClassName="FilesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Count" msprop:Generator_ColumnVarNameInTable="columnCount" msprop:Generator_ColumnPropNameInRow="Count" msprop:Generator_ColumnPropNameInTable="CountColumn" msprop:Generator_UserColumnName="Count" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="NumbersKey" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Numbers" />
+      <xs:field xpath="mstns:NumberId" />
+    </xs:unique>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Records" />
+      <xs:field xpath="mstns:RecordId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
